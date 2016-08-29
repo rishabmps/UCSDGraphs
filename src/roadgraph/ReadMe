@@ -1,0 +1,15 @@
+Class: MapGraph
+
+Modifications made to MapGraph (what and why):
+	1. AdList implementation of graph used as it is a sparse graph.
+	2. addVertex,addEdge and other methods completed.
+	3. bfsSearch and constructPath methods added while refracting bfs() method
+
+Class name: Intersection
+	Purpose and description of class:
+		To store the roadType,roadName,length, endPoint Coordinates of the intersection.
+
+Overall Design Justification (4-6 sentences):
+	I preferred creating a new class Intersection as it made the code easy to reproduce and use. 
+	HashMap is used to store the AdjList as one can perform reading from it O(1) {average}.
+	Refracting was done to made code cleaner it also resulted in some helper(can be further used) methods like constructPath.
